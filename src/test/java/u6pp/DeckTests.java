@@ -16,7 +16,8 @@ public class DeckTests {
         assertEquals(DECK_SIZE, testDeck.numLeft());
     }
 
-    @Test
+    @SuppressWarnings("static-access")
+	@Test
     void dealAndNumLeftWorkCorrectly() throws Exception {
         Deck testDeck = new Deck();
         int expectedDeckSize = DECK_SIZE;
